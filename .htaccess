@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteBase /worthycite/
+
+# Redirect to index.php if not a real file or directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+# Deny access to sensitive files
+<FilesMatch "\.(sql|md|json|lock)$">
+    Require all denied
+</FilesMatch>
+
+# Deny access to directories
+Options -Indexes
