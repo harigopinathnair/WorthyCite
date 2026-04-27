@@ -4,10 +4,19 @@
  * PDO-based MySQL connection
  */
 
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'worthycitdb');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+if (isset($_SERVER['HTTP_HOST']) && ($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == '127.0.0.1')) {
+    // Offline / Local Settings
+    define('DB_HOST', 'localhost');
+    define('DB_NAME', 'worthycitdb');
+    define('DB_USER', 'root');
+    define('DB_PASS', '');
+} else {
+    // Online / Production Settings
+    define('DB_HOST', 'localhost'); // Often localhost on shared hosting
+    define('DB_NAME', 'nqatsxqe_worthycite26');
+    define('DB_USER', 'nqatsxqe_citeworthy26');
+    define('DB_PASS', 'Rankmonk98@');
+}
 define('DB_CHARSET', 'utf8mb4');
 
 function getDB(): PDO {
