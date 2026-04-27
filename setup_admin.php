@@ -2,8 +2,7 @@
 require_once __DIR__ . '/config/database.php';
 require_once __DIR__ . '/config/app.php';
 
-$db = new PDO('mysql:host=localhost;dbname=worthycitdb;charset=utf8mb4', 'root', '');
-$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$db = getDB();
 
 $email = 'citelord@worthycite.com';
 $password = 'Lord19872026@';
