@@ -9,6 +9,9 @@ session_start();
 // Load config
 require_once __DIR__ . '/config/database.php';
 require_once __DIR__ . '/config/app.php';
+if (file_exists(__DIR__ . '/vendor/autoload.php')) {
+    require_once __DIR__ . '/vendor/autoload.php';
+}
 
 // Define routes
 Router::get('',           'HomeController', 'index');

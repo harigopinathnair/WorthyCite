@@ -14,7 +14,16 @@ class Router {
     }
     
     public static function dispatch(): void {
-        $url = isset($_GET['url']) ? trim($_GET['url'], '/') : '';
+        $url = $_GET['url'] ?? '';
+        
+        if (empty($url)) {
+            $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+            // Remove the base path if the project is in a subdirectory
+            $scriptName = dirname($_SERVER['SCRIPT_NAME']);
+            $url = str_replace($scriptName, '', $uri);
+        }
+        
+        $url = trim($url, '/');
         $method = $_SERVER['REQUEST_METHOD'];
         
         // Check exact match first
