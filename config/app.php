@@ -6,7 +6,12 @@
 // App Info
 define('APP_NAME', 'Worthycite');
 define('APP_VERSION', '1.0.0');
-define('APP_URL', 'http://localhost/worthycite');
+// App URL
+if (isset($_SERVER['HTTP_HOST']) && ($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == '127.0.0.1')) {
+    define('APP_URL', 'http://localhost/worthycite');
+} else {
+    define('APP_URL', 'https://worthycite.com'); // Replace with your actual production URL
+}
 define('APP_ROOT', dirname(__DIR__));
 
 // Paths
