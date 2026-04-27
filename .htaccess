@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteBase /worthycite/
+# RewriteBase /worthycite/
 
 # Redirect to index.php if not a real file or directory
 RewriteCond %{REQUEST_FILENAME} !-f
