@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/nqatsxqe/worthycite.com
+    - /bin/cp -R * $DEPLOYPATH
