@@ -33,20 +33,7 @@ ob_start();
     </div>
 </section>
 
-<!-- Logo Band -->
-<section class="logo-band">
-    <div class="container text-center">
-        <p class="logo-band-title">TRUSTED BY 3,000+ FAST-GROWING BRANDS & AGENCIES</p>
-        <div class="logo-grid scroll-reveal">
-            <div class="brand-logo">HubSpot</div>
-            <div class="brand-logo">Shopify</div>
-            <div class="brand-logo">Intercom</div>
-            <div class="brand-logo">Zendesk</div>
-            <div class="brand-logo">Typeform</div>
-            <div class="brand-logo">Mailchimp</div>
-        </div>
-    </div>
-</section>
+
 
 <!-- Feature 1 - CRM Focus -->
 <section class="feature-block block-white">
@@ -96,26 +83,7 @@ ob_start();
     </div>
 </section>
 
-<!-- Testimonial Block -->
-<section class="testimonial-section">
-    <div class="container text-center">
-        <div class="testimonial-content scroll-reveal">
-            <div class="stars">
-                <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
-            </div>
-            <blockquote class="testimonial-quote">
-                "Worthycite completely replaced our messy spreadsheets. The automated tracking and CRM efficiency is an absolute game-changer—we finally have a single source of truth for our link building."
-            </blockquote>
-            <div class="testimonial-author">
-                <img src="https://i.pravatar.cc/150?img=32" alt="Sarah J.">
-                <div>
-                    <strong>Sarah Jenkins</strong>
-                    <span>Head of SEO, TechGrowth</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <!-- Bottom CTA -->
 <section class="final-cta">
@@ -131,17 +99,17 @@ ob_start();
                     Centralized Link Monitoring & Intelligence
                 </div>
                 <h2 class="final-cta-heading">Scale your backlink portfolio with confidence.</h2>
-                <p class="final-cta-sub">Join thousands of SEO teams using Worthycite to track link acquisition, monitor uptime, and simplify reporting.</p>
+                <p class="final-cta-sub">Be among the first SEO teams to build with Worthycite — track link acquisition, monitor uptime, and simplify reporting from day one.</p>
 
                 <div class="final-cta-trust">
                     <div class="trust-item">
-                        <strong>3,000+</strong>
-                        <span>Teams onboarded</span>
+                        <strong>Early</strong>
+                        <span>Adopter Access</span>
                     </div>
                     <div class="trust-divider"></div>
                     <div class="trust-item">
-                        <strong>★ 4.9</strong>
-                        <span>Avg. user rating</span>
+                        <strong>Free</strong>
+                        <span>Plan available</span>
                     </div>
                     <div class="trust-divider"></div>
                     <div class="trust-item">
@@ -160,7 +128,7 @@ ob_start();
                             <span class="card-avatar">J</span>
                             <span class="card-avatar">M</span>
                         </div>
-                        <p class="card-social-proof">Join <strong>3,000+ brands</strong> already growing</p>
+                        <p class="card-social-proof">Be an <strong>early adopter</strong> — free plan available</p>
                     </div>
 
                     <form action="<?= APP_URL ?>/register" method="GET" class="final-cta-form">
